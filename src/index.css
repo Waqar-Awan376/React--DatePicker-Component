@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/*~~~~~~~~~ PROPERTIES ~~~~~~~~~*/
+.text-align-center {
+  text-align: center;
+}
+.margin-top-5 {
+  margin-top: 5px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.light-black-font {
+  color: rgb(186 186 186);
+}
+/*~~~~~~~~~ PROPERTIES ~~~~~~~~~*/
+.picker-container {
+  margin: 30px auto 30px auto;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -1px 0px 59px -3px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -1px 0px 59px -3px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 0px 59px -3px rgba(0, 0, 0, 0.51);
+  user-select: none;
+}
+.day-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.dateNumber-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  cursor: pointer;
+}
+.picker-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 4px dotted red;
+  margin-bottom: 10px;
+}
+.currentDate {
+  border-radius: 50%;
+  background: indianred;
+  padding: 4px;
+  color: black;
+  font-weight: bold;
+}
+.move-direction {
+  cursor: pointer;
+  font-weight: bold;
+}
+.setDate-container
+{
+  text-align: center;
+  margin-top:20px
+}
+.setDate
+{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(186 186 186);
+}
+.setDate-btn
+{
+  padding: 10px;
+  width: 60px;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 4px;
+  border: 1px solid rgb(186 186 186);
+  transition: 0.4s all;
+  cursor: pointer;
+}
+.setDate-btn:hover
+{
+  background-color: black;
+  color: white;
+}
+
